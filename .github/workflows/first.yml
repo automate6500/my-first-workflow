@@ -1,7 +1,12 @@
 name: first
 
-on: push
-
+on: 
+    push:
+        branches: 
+            - develop
+    pull_request:
+        branches: 
+            - master
 jobs:
     job1:
         name: First Job
